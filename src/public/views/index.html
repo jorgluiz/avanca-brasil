@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Honk&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: aquamarine;
+        }
+
+        .head {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: blue;
+        }
+
+        .pacifico-regular {
+            font-size: 70px;
+            color: aliceblue;
+        }
+
+        .pacifico-regular {
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+            cursor: pointer;
+        }
+
+        .ul-container {
+            display: flex;
+            list-style-type: none;
+            /* Remove os pontos da lista */
+        }
+
+        .ul-container li {
+            text-decoration: none;
+            margin: 0 10px 0 10px;
+            color: aquamarine;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .logo {
+            height: 100%;
+            display: flex;
+            align-items: center
+        }
+
+        img {
+            height: 100%;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 400px) {
+            .head {
+                flex-direction: row;
+            }
+
+            .pacifico-regular {
+                font-size: 40px;
+            }
+
+            .ul-container {
+                flex-direction: column;
+            }
+
+            .ul-container li {
+                margin: 0;
+                font-size: 20px;
+                cursor: pointer;
+                margin-bottom: 5px;
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="logo">
+                <img src="../images/labanca.png" alt="">
+                <p class="labanca pacifico-regular">Labanca</p>
+            </div>
+
+            <div class="menu">
+                <ul class="ul-container">
+                    <li>Cursos</li>
+                    <li>Cadastro</li>
+                    <li>A voz do povo</li>
+                </ul>
+            </div>
+        </div>
+        <main class="main"></main>
+    </div>
+</body>
+
+</html>
