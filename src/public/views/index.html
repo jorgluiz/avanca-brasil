@@ -18,7 +18,7 @@
 
         .container {
             height: 100vh;
-            background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 119, 255));
+            background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(0, 119, 255));
         }
 
         .head {
@@ -110,7 +110,7 @@
                 text-decoration: underline;
                 margin: 0 10px 0 10px;
                 color: aquamarine;
-                font-size: 30px;
+                font-size: 20px;
                 cursor: pointer;
             }
 
@@ -157,6 +157,17 @@
                     margin: 0 9px 0 0;
                     color: aquamarine;
                     font-size: 20px;
+                    cursor: pointer;
+                }
+            }
+
+
+            @media (max-width: 287px) {
+                .sub-ul-container li {
+                    text-decoration: underline;
+                    margin: 0 9px 0 0;
+                    color: aquamarine;
+                    font-size: 15px;
                     cursor: pointer;
                 }
             }
